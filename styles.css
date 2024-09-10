@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(#0089ba); /* Gradient blending pastel pink, light cyan, and soft green */
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.nav-menu li {
+    margin: 0 25px;
+}
+
+.nav-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #FFC3A0; /* Soft pastel peach */
+    color: #333;
+    border-radius: 10px;
+}
+
+/* Style for the Sign In and Sign Up buttons */
+.auth-buttons {
+    margin-right: 50px;
+}
+
+.signin-btn, .signup-btn {
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signin-btn {
+    background-color: rgb(167, 213, 227);
+    
+    color: black;
+}
+
+.signup-btn {
+    background-color: rgb(167, 213, 227);/* Green-blue gradient */
+    color: black;
+}
+
+.signin-btn:hover {
+    background-color: rgb(184, 123, 255); /* Pink to light cyan hover */
+}
+
+.signup-btn:hover {
+    background-color: rgb(184, 123, 255); /* Light purple to pink hover */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+/* Section background gradients with pastel colors */
+#home {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* Pink to Light Cyan */
+}
+
+#about {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9f9be3, #a49be4, #a99ce6, #c590dc, #df83ca, #f377b0, #ff6f91); /* Light lavender to soft pink */
+}
+
+#services {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #9096d6, #8791cb, #7f8cbf, #7678a2, #696686, #5b546c, #4b4453); /* Soft orange to light sky blue */
+}
+
+#contact {
+    background-image: linear-gradient(to right top, #0081cf, #3588d4, #4e8fd8, #6197dd, #729ee1, #6ea9ea, #6bb4f1, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); /* Pastel pink to soft blue */
+}
+
+.scrolled {
+    background: linear-gradient(45deg, #A1C4FD, #C2E9FB); /* Soft blue gradient when scrolled */
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+    text-align: left;
+}
+
+ul li strong {
+    color: #333;
+}
